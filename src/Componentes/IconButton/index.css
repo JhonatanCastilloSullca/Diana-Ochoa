@@ -1,0 +1,69 @@
+.link-icon {
+    text-decoration: none !important;
+    border: none !important;
+    position: relative !important;
+    padding: 7px 10px !important;
+    overflow: hidden !important;
+    display: inline-block !important;
+    border-radius: 30px !important;
+    color: #001734 !important;
+    transition: .3s .2s !important;
+    font-size: 20px !important;
+    background: #b81b21;
+    font-weight: bold !important;
+    box-shadow: 0 10px 20px 5px rgba(228, 228, 228, 0.1) !important;
+}
+
+
+.link-icon::before,
+.link-icon::after {
+    content: '' !important;
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: -100% !important;
+    transition: .3s ease-in-out !important;
+    z-index: -1 !important;
+}
+
+.link-icon::before {
+    background: #681b1e !important;
+    transition-delay: .1s !important;
+    z-index: 9 !important;
+}
+
+.link-icon::after {
+    background: #7d1c20 !important;
+    transition-delay: 0s !important;
+    z-index: 9 !important;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+.link-icon:hover {
+    color: #fff !important;
+    transition: .3s 0s !important;
+}
+
+.link-icon:hover::before,
+.link-icon:hover::after {
+    left: 0 !important;
+}
+
+.link-icon:hover::before {
+    transition-delay: 0s !important;
+}
+
+.link-icon:hover::after {
+    transition-delay: .1s !important;
+}
+
+
+.link-icon:hover::before,
+.link-icon:hover::after {
+    left: 0;
+}
+
+.link-icon:hover .text-white-content {
+    color: white;
+}
